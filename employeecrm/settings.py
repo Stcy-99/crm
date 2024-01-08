@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ye%w^$@ik1xpeh8#21jw1*ya$7h%u4yp!$cag4f&rq+#%nlu8k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crm'
+    'crm',
+    'rest_framework',
+    'api'
 ]
 
 MIDDLEWARE = [
